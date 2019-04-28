@@ -9,3 +9,7 @@
   - printf "install: --no-rdoc --no-ri\nupdate:  --no-rdoc --no-ri\n" >> ~/.gemrc
   - gem install rails (installed latest, 5.2.3)
   - Moved sqlite to development/test group in gemfile
+  - Added a production group in gemfile, included postgres gem
+  - Installed heroku: source <(curl -sL https://cdn.learnenough.com/heroku_install)
+  - Heroku login from command line: heroku login -i
+  - 
