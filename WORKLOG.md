@@ -18,3 +18,4 @@
   - Installed heroku: source <(curl -sL https://cdn.learnenough.com/heroku_install)
   - Heroku login from command line: heroku login -i
   - Test deployment with hello world
+- Created a static pages controller
