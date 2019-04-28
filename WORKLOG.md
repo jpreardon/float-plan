@@ -10,6 +10,7 @@
   - gem install rails (installed latest, 5.2.3)
   - Moved sqlite to development/test group in gemfile
   - Added a production group in gemfile, included postgres gem
+  - Updated gemfile w/o installing pg locally: bundle install --without production
   - Installed heroku: source <(curl -sL https://cdn.learnenough.com/heroku_install)
   - Heroku login from command line: heroku login -i
   - 
