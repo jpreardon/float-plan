@@ -1,5 +1,9 @@
 # Worklog
 
+## TODO
+
+- Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-serverr
+
 ## 2019-04-27
 
 - [Initialize git](https://www.atlassian.com/git/tutorials/setting-up-a-repository) 
@@ -13,4 +17,4 @@
   - Updated gemfile w/o installing pg locally: bundle install --without production
   - Installed heroku: source <(curl -sL https://cdn.learnenough.com/heroku_install)
   - Heroku login from command line: heroku login -i
-  - 
+  - Test deployment with hello world
