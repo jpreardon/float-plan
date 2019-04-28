@@ -19,3 +19,4 @@
   - Heroku login from command line: heroku login -i
   - Test deployment with hello world
 - Created a static pages controller
+- Added minitest reporters to gem file
