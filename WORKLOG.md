@@ -2,6 +2,10 @@
 
 ## TODO
 
+- Bootstrap
+- Placeholders for basic IA
+- Custom guard file
+- User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-serverr
 
 ## 2019-04-27
