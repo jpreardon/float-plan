@@ -8,3 +8,4 @@
 - Create new Rails app (using the the [Rails Tutorial](https://www.railstutorial.org/book/beginning) as a guide)
   - printf "install: --no-rdoc --no-ri\nupdate:  --no-rdoc --no-ri\n" >> ~/.gemrc
   - gem install rails (installed latest, 5.2.3)
+  - Moved sqlite to development/test group in gemfile
