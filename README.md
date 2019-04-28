@@ -1,3 +1,3 @@
 # Float Plan
 
-"I think we're going to need a bigger boat."
+"I think we need a bigger boat..."
