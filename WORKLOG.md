@@ -20,6 +20,7 @@
   - Added heroku remote `git remote add heroku https://git.heroku.com/float-plan-app.git`
   - Deployed to heroku, nice.
   - Decided to use [SSH for github](https://help.github.com/en/articles/connecting-to-github-with-ssh)
+  - To test, shut down instance, browser, logged in again. It's working.
 
 ## 2019-04-27
 
