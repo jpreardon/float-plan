@@ -6,7 +6,12 @@
 - Placeholders for basic IA
 - Custom guard file
 - User setup (a la railstutorial, won't hurt to go trough that again)
-- Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-serverr
+- Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+- 
+## 2019-04-28
+
+- Unable to connect to Cloud9 Environment today after many attempts :( Let's just do this again...
+- 
 
 ## 2019-04-27
 
