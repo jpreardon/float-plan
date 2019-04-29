@@ -17,6 +17,7 @@
   - `bundle install --without production`
   - `source <(curl -sL https://cdn.learnenough.com/heroku_install)` *had to do this twice*
   - `heroku login -i`
+  - Added heroku remote `git remote add heroku https://git.heroku.com/float-plan-app.git`
 
 ## 2019-04-27
 
