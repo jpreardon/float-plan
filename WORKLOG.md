@@ -12,6 +12,7 @@
 - Set up Bootstrap
     - Add `gem 'bootstrap', '4.3.1'` to gemfile, `bundle install`
     - Followed directions from the README to import bootstrap and at jquery to gemfile
+- Make app name dynamic (in nav)
 
 ## 2019-04-28
 

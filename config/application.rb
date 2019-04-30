@@ -15,5 +15,9 @@ module FloatPlan
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    
+    # This is the application name, keeping it dynamic since it's likly to change. 2019-04-29 JPR
+    # TODO: There must be a better way to do this
+    APP_NAME = 'Float Plan'
   end
 end
