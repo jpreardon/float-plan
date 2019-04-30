@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+// Added for bootstrap 2019-04-29 JPR
+//= require jquery3
+//= require popper
+//= require bootstrap

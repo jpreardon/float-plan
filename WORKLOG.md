@@ -2,11 +2,16 @@
 
 ## TODO
 
-- Bootstrap
 - Placeholders for basic IA
 - Custom guard file
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+
+## 2019-04-29
+
+- Set up Bootstrap
+    - Add `gem 'bootstrap', '4.3.1'` to gemfile, `bundle install`
+    - Followed directions from the README to import bootstrap and at jquery to gemfile
 
 ## 2019-04-28
 
