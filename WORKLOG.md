@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Custom guard file
 - "Wireframe" the app basics as static pages
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
@@ -10,6 +9,7 @@
 ## 2019-04-30
 
 - Add app_name helper
+- Custom guard file (from [railstutorial](https://bitbucket.org/railstutorial/sample_app_4th_ed/raw/289fcb83f1cd72b51c05fe9319277d590d51f0d2/Guardfile_)
 
 ## 2019-04-29
 
