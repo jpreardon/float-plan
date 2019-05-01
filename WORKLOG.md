@@ -3,8 +3,13 @@
 ## TODO
 
 - Custom guard file
+- "Wireframe" the app basics as static pages
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+
+## 2019-04-30
+
+- Add app_name helper
 
 ## 2019-04-29
 
