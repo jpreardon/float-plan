@@ -10,6 +10,7 @@
 
 - Add app_name helper
 - Custom guard file (from [railstutorial](https://bitbucket.org/railstutorial/sample_app_4th_ed/raw/289fcb83f1cd72b51c05fe9319277d590d51f0d2/Guardfile_)
+- "Wireframing..."
 
 ## 2019-04-29
 
