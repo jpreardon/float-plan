@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
   
   def float_plans
   end
+  
+  def fleet
+  end
 end
