@@ -1,5 +1,5 @@
 # Uncomment the following line on the cloud IDE. (Ignore the subsequent warning.)
-notification :libnotify
+# notification :libnotify
 
 # Defines the matching rules for Guard.
 guard :minitest, spring: "bin/rails test", all_on_start: false do
