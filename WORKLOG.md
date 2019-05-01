@@ -2,7 +2,7 @@
 
 ## TODO
 
-- "Wireframe" the app basics as static pages
+- Add page titles
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
 
@@ -10,8 +10,10 @@
 
 - Add app_name helper
 - Custom guard file (from [railstutorial](https://bitbucket.org/railstutorial/sample_app_4th_ed/raw/289fcb83f1cd72b51c05fe9319277d590d51f0d2/Guardfile_)
-- "Wireframing..."
-  - Float plans page
+- "Wireframe" the app basics as static pages:
+  - Float plans
+  - Fleet
+  - Crew
 
 ## 2019-04-29
 
