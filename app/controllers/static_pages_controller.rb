@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
   
   def fleet
   end
+  
+  def crew
+  end
 end
