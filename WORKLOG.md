@@ -2,13 +2,14 @@
 
 ## TODO
 
-- Wireframe a float plan entry screen (mobile first)
+- Test coverage
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
 
 ## 2019-05-01
 
 - Add page titles
+- - Wireframe a float plan entry screen (mobile first)
 
 ## 2019-04-30
 
