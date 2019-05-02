@@ -3,9 +3,12 @@
 ## TODO
 
 - Wireframe a float plan entry screen (mobile first)
-- Add page titles
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+
+## 2019-05-01
+
+- Add page titles
 
 ## 2019-04-30
 
