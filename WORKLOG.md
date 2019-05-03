@@ -2,12 +2,16 @@
 
 ## TODO
 
-- User setup (a la railstutorial, won't hurt to go trough that again)
+- Users: Passwords
+- Login
+- Restrict views to admins
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
 
 ## 2019-05-02
 
 - Test coverage for static pages
+- User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
+  - Add user basic model, validations & tests
 
 ## 2019-05-01
 
