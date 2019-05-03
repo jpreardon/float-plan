@@ -2,19 +2,22 @@
 
 ## TODO
 
-- Test coverage
 - User setup (a la railstutorial, won't hurt to go trough that again)
 - Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+
+## 2019-05-02
+
+- Test coverage for static pages
 
 ## 2019-05-01
 
 - Add page titles
-- - Wireframe a float plan entry screen (mobile first)
+- Wireframe a float plan entry screen (mobile first)
 
 ## 2019-04-30
 
 - Add app_name helper
-- Custom guard file (from [railstutorial](https://bitbucket.org/railstutorial/sample_app_4th_ed/raw/289fcb83f1cd72b51c05fe9319277d590d51f0d2/Guardfile_)
+- Custom guard file (from [railstutorial](https://bitbucket.org/railstutorial/sample_app_4th_ed/raw/289fcb83f1cd72b51c05fe9319277d590d51f0d2/Guardfile_))  
 - "Wireframe" the app basics as static pages:
   - Float plans
   - Fleet
