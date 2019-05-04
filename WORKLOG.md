@@ -14,6 +14,7 @@
   - Add user basic model, validations & tests
   - Add secure password function
   - Add and style debug info on pages in the dev environment
+  - Add admin, skipper, and mobile to users
 
 ## 2019-05-01
 
