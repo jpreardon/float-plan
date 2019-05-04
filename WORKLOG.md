@@ -12,6 +12,7 @@
 - Test coverage for static pages
 - User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
   - Add user basic model, validations & tests
+  - Add secure password function
 
 ## 2019-05-01
 
