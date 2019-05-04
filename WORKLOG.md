@@ -13,6 +13,7 @@
 - User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
   - Add user basic model, validations & tests
   - Add secure password function
+  - Add and style debug info on pages in the dev environment
 
 ## 2019-05-01
 

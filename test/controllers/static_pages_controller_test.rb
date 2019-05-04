@@ -35,5 +35,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select 'title', "Crew | #{@base_title}"
   end
+  
+  test "debug dump shoud not appear on pages" do
+    get static_pages_home_url
+    assert_select 'div[class=?]', 'debug_dump', false
+  end
 
 end
