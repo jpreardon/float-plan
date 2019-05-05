@@ -22,6 +22,7 @@
 - Change routes to remove "static pages" URLS
 - Login
   - Add sessions controller
+  - Add login page
 
 ## 2019-05-01
 
