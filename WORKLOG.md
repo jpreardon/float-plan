@@ -15,6 +15,7 @@
   - Add secure password function
   - Add and style debug info on pages in the dev environment
   - Add admin, skipper, and mobile to users
+  - Add new user form
 
 ## 2019-05-01
 
