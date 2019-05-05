@@ -1,5 +1,6 @@
 $bg-light: $gray-100;
-$trans-gray: #0000001a;;
+$trans-gray: #0000001a;
+$state-danger-text: red;
 
 .content {
   padding-top: 1rem;
@@ -28,4 +29,19 @@ $trans-gray: #0000001a;;
   background-color: $bg-light;
   border-radius: 0.3rem;
   color: $secondary;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error !optional;
+  .form-control {
+    color: $state-danger-text;
+  }
 }

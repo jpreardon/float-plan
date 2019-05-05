@@ -16,6 +16,7 @@
   - Add and style debug info on pages in the dev environment
   - Add admin, skipper, and mobile to users
   - Add new user form
+  - Save new users to DB
 
 ## 2019-05-01
 
