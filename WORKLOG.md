@@ -2,10 +2,13 @@
 
 ## TODO
 
-- Users: Passwords
 - Login
+- Restrict views to users
 - Restrict views to admins
-- Update web server on heroku: https://devcenter.heroku.com/articles/ruby-default-web-server
+- Professional grade deployment [tutorial](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment)
+  - SSL
+  - Webserver
+  - DB
 
 ## 2019-05-02
 
