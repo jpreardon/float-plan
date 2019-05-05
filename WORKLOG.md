@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Login
 - Restrict views to users
 - Restrict views to admins
 - Professional grade deployment [tutorial](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment)
@@ -20,6 +19,9 @@
   - Add admin, skipper, and mobile to users
   - Add new user form
   - Save new users to DB
+- Change routes to remove "static pages" URLS
+- Login
+  - Add sessions controller
 
 ## 2019-05-01
 
