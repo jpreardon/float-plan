@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: <%= ENV['FLOAT_PLAN_DB_NAME'] %>
+  username: <%= ENV['FLOAT_PLAN_DB_USERNAME'] %>
+  password: <%= ENV['FLOAT_PLAN_DB_PASSWORD'] %>
