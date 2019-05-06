@@ -3,6 +3,7 @@
 ## TODO
 
 - Wire up crew view
+- Restrict adding/destroying users to admins
 - Restrict views to users
 - Restrict views to admins
 - Email new users login token
@@ -29,6 +30,8 @@
   - SSL
   - Webserver
   - DB
+- Update users
+  - Add users edit form
 
 ## 2019-05-01
 

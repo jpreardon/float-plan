@@ -32,3 +32,6 @@
 
 # Ignore spring files 2019-04-30 JPR
 /spring/*.pid 
+
+# Ignore heroku directory
+/heroku
