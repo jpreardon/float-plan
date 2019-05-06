@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users)
 - Wire up crew view
 - Restrict adding/destroying users to admins
 - Restrict views to users
@@ -32,6 +33,7 @@
   - DB
 - Update users
   - Add users edit form
+  - Add user edit function and tests
 
 ## 2019-05-01
 
