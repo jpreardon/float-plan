@@ -46,6 +46,6 @@
     <%= f.password_field :password_confirmation, class: 'form-control' %>
   </div>
   
-  <%= f.submit 'Add User', class: 'btn btn-primary' %>
+  <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
   
 <% end %>
