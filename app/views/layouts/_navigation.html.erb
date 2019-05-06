@@ -8,18 +8,20 @@
     <% #TODO: These items really only apply to logged in users. %>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <%= link_to 'Float Plans', float_plans_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Fleet', fleet_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Crew', crew_path, class: 'nav-link' %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Sign In', login_path, class: 'nav-link' %>
-        </li>
+        <% if logged_in? %>
+          <li class="nav-item">
+            <%= link_to 'Float Plans', float_plans_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Fleet', fleet_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Crew', crew_path, class: 'nav-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Sign Out', logout_path, class: 'nav-link' %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

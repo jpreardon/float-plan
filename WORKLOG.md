@@ -2,12 +2,16 @@
 
 ## TODO
 
+- Wire up crew view
 - Restrict views to users
 - Restrict views to admins
 - Professional grade deployment [tutorial](https://www.railstutorial.org/book/sign_up#sec-professional_grade_deployment)
   - SSL
   - Webserver
   - DB
+- Email new users login token
+- Wire up new float plan view
+- Wire up float plan list view
 
 ## 2019-05-02
 
@@ -23,6 +27,8 @@
 - Login
   - Add sessions controller
   - Add login page
+  - Add session helpers for login
+  - Add logout function
 
 ## 2019-05-01
 
