@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_04_160858) do
+ActiveRecord::Schema.define(version: 2019_05_08_022340) do
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_05_04_160858) do
     t.boolean "admin", default: false
     t.boolean "skipper", default: false
     t.string "mobile"
+    t.string "remember_digest"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

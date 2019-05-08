@@ -2,7 +2,8 @@
 
 ## TODO
 
-- Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users)
+- [Advanced Login](https://www.railstutorial.org/book/advanced_login) for cookies
+- Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
 - Wire up crew view
 - Restrict adding/destroying users to admins
 - Restrict views to users
@@ -10,15 +11,17 @@
 - Email new users login token
 - Wire up new float plan view
 - Wire up float plan list view
+- "Remember me" from more than one browser
 
-## 2019-05-02
+## 2019-05-07
 
-- Test coverage for static pages
+- Started working on auth, but went down a rathole because I didn't do the advanced login stuff, like an idiot. So I got (almost) nothing done.
+- [Advanced Login](https://www.railstutorial.org/book/advanced_login) for cookies
+  -  Add remember digest and remember function to user.
+
+## 2019-05-05
+
 - User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
-  - Add user basic model, validations & tests
-  - Add secure password function
-  - Add and style debug info on pages in the dev environment
-  - Add admin, skipper, and mobile to users
   - Add new user form
   - Save new users to DB
 - Change routes to remove "static pages" URLS
@@ -34,6 +37,18 @@
 - Update users
   - Add users edit form
   - Add user edit function and tests
+
+## 2019-05-04
+
+- User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
+  - Add secure password function
+  - Add and style debug info on pages in the dev environment
+  - Add admin, skipper, and mobile to users
+
+## 2019-05-03
+- User setup (a la [railstutorial](https://www.railstutorial.org/book/modeling_users))
+  - Add user basic model, validations & tests
+- Test coverage for static pages
 
 ## 2019-05-01
 
