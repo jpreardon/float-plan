@@ -3,6 +3,7 @@
 ## TODO
 
 - [Advanced Login](https://www.railstutorial.org/book/advanced_login) for cookies
+  - Continue with [Two subtle bugs](https://www.railstutorial.org/book/advanced_login#sec-two_subtle_bugs) 
 - Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
 - Wire up crew view
 - Restrict adding/destroying users to admins
@@ -18,6 +19,8 @@
 - Started working on auth, but went down a rathole because I didn't do the advanced login stuff, like an idiot. So I got (almost) nothing done.
 - [Advanced Login](https://www.railstutorial.org/book/advanced_login) for cookies
   -  Add remember digest and remember function to user.
+  -  Add remember function, and NEVER FORGET!!!
+  -  Add forget functions.
 
 ## 2019-05-05
 
