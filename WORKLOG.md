@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
 - Wire up crew view
 - Restrict adding/destroying users to admins
 - Restrict views to users
@@ -11,7 +10,13 @@
 - Wire up new float plan view
 - Wire up float plan list view
 - "Remember me" from more than one browser
-- 
+
+## 2019-05-11
+
+- Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
+  - Add logged in user authorization on edits
+  - Hide crew listing from non-admins
+  
 ## 2019-05-10
 
 - Fix two subtle bugs in remember functions

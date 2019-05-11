@@ -15,9 +15,11 @@
           <li class="nav-item">
             <%= link_to 'Fleet', fleet_path, class: 'nav-link' %>
           </li>
-          <li class="nav-item">
-            <%= link_to 'Crew', crew_path, class: 'nav-link' %>
-          </li>
+          <% if current_user.admin? %>
+            <li class="nav-item">
+              <%= link_to 'Crew', crew_path, class: 'nav-link' %>
+            </li>
+          <% end %>
           <li class="nav-item">
             <%= link_to 'Sign Out', logout_path, method: 'delete', class: 'nav-link' %>
           </li>
