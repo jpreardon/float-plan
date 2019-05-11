@@ -24,6 +24,7 @@
   - Add Faker gem, seed database
   - Add pagination to crew page
   - Add new/edit/delete user buttons
+  - Order user list by last name
   
 ## 2019-05-10
 
