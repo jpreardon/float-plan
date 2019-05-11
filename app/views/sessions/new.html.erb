@@ -14,6 +14,12 @@
         <%= f.password_field :password, class: 'form-control' %>
       </div>
       
+      <div class="form-check">
+        <%= f.check_box :remember, class: 'form-check-input' %>
+        <%= f.label :remember, 'Remember me on this device' %>
+      </div>
+      
+      
       <%= f.submit 'Log in', class: 'btn btn-primary' %>
     <% end %>
   </div>

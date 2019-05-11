@@ -13,6 +13,11 @@
 - Wire up new float plan view
 - Wire up float plan list view
 - "Remember me" from more than one browser
+- 
+## 2019-05-10
+
+- Fix two subtle bugs in remember functions
+- Add remember checkbox
 
 ## 2019-05-07
 
