@@ -22,6 +22,7 @@
   - Add users index page, remove static crew page, redirect navigation, test
   - Add table to crew page
   - Add Faker gem, seed database
+  - Add pagination to crew page
   
 ## 2019-05-10
 
