@@ -1,23 +1,33 @@
 <% provide(:title, 'Crew') %>
 <h1>All Crew</h1>
 
-<ul class="users">
-  <% @users.each do |user| %>
-    <li>
-      <%= link_to "#{user.first_name} #{user.last_name}", user %>
-    </li>
-  <% end %>
-</ul>
-
-<pre>
-
-This will be a list of skippers, crew, and guests. It will allow for searching and filtering on things like...
-
-    Name
-    Skipper or not
-    Status (current, in arrears, etc.)
-    Last activity date
-    Number of trips
-
-</pre>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td>
+            <% if user.admin? %>
+              <span class="badge-pill badge-secondary">Admin</span>
+            <% end %>
+            <% if user.skipper? %>
+              <span class="badge-pill badge-primary">Skipper</span>
+            <% end %>
+          </td>
+          <td><%= link_to "#{user.first_name} #{user.last_name}", user %></td>
+          <td><%= link_to number_to_phone(user.mobile, area_code: true), "tel:+1#{user.mobile}" %></td>
+          <td><%= mail_to user.email %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
