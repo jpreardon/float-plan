@@ -10,12 +10,15 @@
 - Wire up new float plan view
 - Wire up float plan list view
 - "Remember me" from more than one browser
+- Allow users to edit their own profiles
+- [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 
 ## 2019-05-11
 
 - Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
   - Add logged in user authorization on edits
   - Hide crew listing from non-admins
+  - Restrict user create, edit, update to admins
   
 ## 2019-05-10
 
