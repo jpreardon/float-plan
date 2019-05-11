@@ -3,8 +3,8 @@ david:
   last_name: Jones
   email: djones@lockers.com
   mobile: 2128675309
-  admin: 0
-  skipper: 0
+  admin: 1
+  skipper: 1
   password_digest: <%= User.digest('password') %>
   
 quint:
@@ -13,6 +13,6 @@ quint:
   email: quint@ourshark.net
   mobile: 5081234567
   admin: 0
-  skipper: 1
+  skipper: 0
   password_digest: <%= User.digest('password') %>
   
