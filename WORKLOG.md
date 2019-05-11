@@ -2,8 +2,6 @@
 
 ## TODO
 
-- [Advanced Login](https://www.railstutorial.org/book/advanced_login) for cookies
-  - Continue with [Two subtle bugs](https://www.railstutorial.org/book/advanced_login#sec-two_subtle_bugs) 
 - Continue with [auth](https://www.railstutorial.org/book/updating_and_deleting_users#sec-authorization)
 - Wire up crew view
 - Restrict adding/destroying users to admins
@@ -18,6 +16,7 @@
 
 - Fix two subtle bugs in remember functions
 - Add remember checkbox
+- Finish login and remember me functions
 
 ## 2019-05-07
 
