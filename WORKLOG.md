@@ -21,6 +21,7 @@
 - Wire up crew view
   - Add users index page, remove static crew page, redirect navigation, test
   - Add table to crew page
+  - Add Faker gem, seed database
   
 ## 2019-05-10
 
