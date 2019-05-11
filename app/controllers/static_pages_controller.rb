@@ -8,9 +8,6 @@ class StaticPagesController < ApplicationController
   def fleet
   end
   
-  def crew
-  end
-  
   def new_float_plan
   end
 end

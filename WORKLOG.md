@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Wire up crew view
 - Restrict adding/destroying users to admins
 - Restrict views to users
 - Restrict views to admins
@@ -19,6 +18,8 @@
   - Add logged in user authorization on edits
   - Hide crew listing from non-admins
   - Restrict user create, edit, update to admins
+- Wire up crew view
+  - Add users index page, remove static crew page, redirect navigation, test
   
 ## 2019-05-10
 

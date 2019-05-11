@@ -1,6 +1,8 @@
+<% title = "#{@user.first_name} #{@user.last_name}" %>
+<% provide(:title, title) %>
 <div class="row">
   <div class="col">
-    <h2><%= @user.first_name %> <%=@user.last_name %></h2>
+    <h2><%= title %></h2>
     <% if @user.admin? %>
       <span class="badge-pill badge-secondary">Admin</span>
     <% end %>
