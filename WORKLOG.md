@@ -23,6 +23,7 @@
   - Add table to crew page
   - Add Faker gem, seed database
   - Add pagination to crew page
+  - Add new/edit/delete user buttons
   
 ## 2019-05-10
 

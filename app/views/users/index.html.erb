@@ -1,6 +1,9 @@
 <% provide(:title, 'Crew') %>
 <h1>All Crew</h1>
 
+<%= link_to "New user", new_user_path, class: "btn btn-outline-secondary" %>
+<hr>
+
 <%= will_paginate %>
 
 <div class="table-responsive">
