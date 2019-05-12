@@ -27,7 +27,7 @@ class BoatsEditTest < ActionDispatch::IntegrationTest
                                               name: name,
                                               note: note } }
     assert_not flash.empty?
-    assert_redirected_to @boat
+    assert_redirected_to boats_path
     @boat.reload
     assert_equal number, @boat.number
     assert_equal name, @boat.name

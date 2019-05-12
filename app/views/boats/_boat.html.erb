@@ -2,9 +2,15 @@
   <td>
     <% #TODO: This is a mess, make it a helper 2010-05-12 %>
     <% if boat.name.empty? %>
-    <%= link_to boat.number, boat_path(boat) %>
+    <% boat_title =  boat.number %>
     <% else %>
-    <%= link_to "#{boat.number} - #{boat.name}", boat_path(boat) %>
+    <% boat_title = "#{boat.number} - #{boat.name}" %>
+    <% end %>
+    
+    <% if current_user.admin? %>
+    <%= link_to boat_title, edit_boat_path(boat) %>
+    <% else %>
+    <%= boat_title %>
     <% end %>
   </td>
   <td><%= boat.note %></td>

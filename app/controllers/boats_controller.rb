@@ -10,7 +10,7 @@ class BoatsController < ApplicationController
     @boat = Boat.create(boat_params)
     if @boat.save
       flash[:success] = "Boat number #{@boat.number} added!"
-      redirect_to @boat
+      redirect_to boats_path
     else
       render 'new'
     end
@@ -28,7 +28,7 @@ class BoatsController < ApplicationController
     @boat = Boat.find(params[:id])
     if @boat.update_attributes(boat_params)
       flash[:success] = "Boat number #{@boat.number} updated!"
-      redirect_to @boat
+      redirect_to boats_path
     else
       render 'edit'
     end

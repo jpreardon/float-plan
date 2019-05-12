@@ -15,6 +15,7 @@
 
 ## 2019-05-12
 
+- Link to edit pager directly from boats index, don't show links to non-admins
 - Add a logged in version of the home page.
 - Fleet Pages
   - Generate boats controller

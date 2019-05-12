@@ -5,6 +5,7 @@ class BoatsIndexTest < ActionDispatch::IntegrationTest
   def setup
     @admin = users(:david)
     @user = users(:quint)
+    @boat = boats(:wasp)
   end
   
   test 'index includes all boats' do
@@ -12,8 +13,15 @@ class BoatsIndexTest < ActionDispatch::IntegrationTest
     get boats_path
     assert_template 'boats/index'
     Boat.all.each do |boat|
-      assert_select 'a[href=?]', boat_path(boat)
+      assert_select 'a[href=?]', edit_boat_path(boat)
     end
+  end
+  
+  test 'index has no links for non-admins' do
+    log_in_as(@user)
+    get boats_path
+    assert_template 'boats/index'
+    assert_select 'a[href=?]', boat_path(@boat), count: 0
   end
   
   test 'page includes a new boat button for admins' do

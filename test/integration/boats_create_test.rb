@@ -34,7 +34,7 @@ class BoatsCreateTest < ActionDispatch::IntegrationTest
                                           number: '2' } }
     end
     follow_redirect!
-    assert_template 'boats/show'
+    assert_template 'boats/index'
     assert_select 'div.alert-success'
   end
 end
