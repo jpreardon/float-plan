@@ -1,11 +1,5 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+wasp:
+  number: "1"
+  name: 'The Flying WASP'
+  note: 'You get a free bowl of soup with it.'
 
-one:
-  number: MyString
-  name: MyString
-  note: MyText
-
-two:
-  number: MyString
-  name: MyString
-  note: MyText
