@@ -21,6 +21,13 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to login_url
   end
   
+  test 'should redirect create when logged in as non-admin user' do
+    log_in_as(@other_user)
+    post users_path, params: { user: { first_name: '' } }
+    assert_not flash.empty?
+    assert_redirected_to root_url
+  end
+  
   test 'should redirect edit when logged in as non-admin user' do
     log_in_as(@other_user)
     get edit_user_path(@user)

@@ -2,9 +2,6 @@
 
 ## TODO
 
-- Restrict adding/destroying users to admins
-- Restrict views to users
-- Restrict views to admins
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Wire up new float plan view
 - Wire up float plan list view
@@ -15,6 +12,7 @@
 
 ## 2019-05-12
 
+- Restrict static pages to users
 - Link to edit pager directly from boats index, don't show links to non-admins
 - Add a logged in version of the home page.
 - Fleet Pages
