@@ -16,6 +16,7 @@
 
 - Fleet Pages
   - Generate boats controller
+  - Generate boat model
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins
