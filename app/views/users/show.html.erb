@@ -22,10 +22,10 @@
   </div>
 </div>
 
-<hr>
-
-<%= link_to "Edit user", edit_user_path, class: "btn btn-outline-primary" %>
-<%= link_to "Delete user", @user,  method: :delete, 
-                                  data: { confirm: 'Are you sure?' },
-                                  class: "btn btn-outline-danger" %>
-
+<% if current_user.admin? %>
+  <hr>
+  <%= link_to "Edit user", edit_user_path, class: "btn btn-outline-primary" %>
+  <%= link_to "Delete user", @user,  method: :delete, 
+                                    data: { confirm: 'Are you sure?' },
+                                    class: "btn btn-outline-danger" %>
+<% end %>
