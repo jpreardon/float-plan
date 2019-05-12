@@ -8,6 +8,7 @@
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Wire up new float plan view
 - Wire up float plan list view
+- Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
 - "Remember me" from more than one browser
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
@@ -24,6 +25,7 @@
   - Refactor new boat form to partial
   - Add edit function and tests
   - Add index page and test
+  - Swap out boat index page for static fleet page
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins

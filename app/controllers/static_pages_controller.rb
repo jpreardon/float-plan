@@ -5,9 +5,6 @@ class StaticPagesController < ApplicationController
   def float_plans
   end
   
-  def fleet
-  end
-  
   def new_float_plan
   end
 end

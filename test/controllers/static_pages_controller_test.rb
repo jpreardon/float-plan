@@ -24,12 +24,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select 'title', "New Float Plan | #{@base_title}"
   end
   
-  test "should get fleet page" do
-    get fleet_url
-    assert_response :success
-    assert_select 'title', "Fleet | #{@base_title}"
-  end
-  
   test "debug dump shoud not appear on pages" do
     get home_url
     assert_select 'div[class=?]', 'debug_dump', false
