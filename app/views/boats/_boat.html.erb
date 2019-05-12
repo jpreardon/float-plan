@@ -1,0 +1,12 @@
+<tr>
+  <td>
+    <% #TODO: This is a mess, make it a helper 2010-05-12 %>
+    <% if boat.name.empty? %>
+    <%= link_to boat.number, boat_path(boat) %>
+    <% else %>
+    <%= link_to "#{boat.number} - #{boat.name}", boat_path(boat) %>
+    <% end %>
+  </td>
+  <td><%= boat.note %></td>
+  <td><%= distance_of_time_in_words(boat.updated_at, Time.now) %> ago</td>
+</tr>

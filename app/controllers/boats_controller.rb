@@ -32,6 +32,10 @@ class BoatsController < ApplicationController
     end
   end
   
+  def index
+    @boats = Boat.all.order('number')
+  end
+  
   private
   
     def boat_params
