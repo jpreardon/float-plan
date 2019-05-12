@@ -8,13 +8,12 @@ class BoatTest < ActiveSupport::TestCase
   end
   
   test 'boat should be valid' do
-    boat = Boat.create(number: '1')
+    boat = Boat.create(number: '2')
     assert boat.valid?
   end
   
   test 'boat number should be unique' do
-    boat = Boat.create(number: '1')
-    assert boat.save
+    # Boat 1 exists in fixtures
     dupe = Boat.create(number: '1')
     assert_not dupe.valid?
   end

@@ -18,6 +18,20 @@ class BoatsController < ApplicationController
     @boat = Boat.find(params[:id])
   end
   
+  def edit
+    @boat = Boat.find(params[:id])
+  end
+  
+  def update
+    @boat = Boat.find(params[:id])
+    if @boat.update_attributes(boat_params)
+      flash[:success] = "Boat number #{@boat.number} updated!"
+      redirect_to @boat
+    else
+      render 'edit'
+    end
+  end
+  
   private
   
     def boat_params
