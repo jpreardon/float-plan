@@ -16,6 +16,7 @@
 ## 2019-05-12
 
 - Refactor users list
+- Add user destroy function
 
 ## 2019-05-11
 
