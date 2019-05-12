@@ -26,6 +26,7 @@
   - Add edit function and tests
   - Add index page and test
   - Swap out boat index page for static fleet page
+  - Restrict boat view to logged in users, add destroy method and tests
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins

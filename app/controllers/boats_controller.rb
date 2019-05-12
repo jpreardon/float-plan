@@ -1,4 +1,6 @@
 class BoatsController < ApplicationController
+  before_action :logged_in_user
+  before_action :admin_user, only: [:new, :create, :edit, :update, :destroy]
   
   def new
     @boat = Boat.new
@@ -36,11 +38,30 @@ class BoatsController < ApplicationController
     @boats = Boat.all.order('number')
   end
   
+  def destroy
+    Boat.find(params[:id]).destroy
+    flash[:success] = 'Boat deleted'
+  end
+
   private
   
     def boat_params
       params.require(:boat).permit( :number,
                                     :name,
                                     :note)
+    end
+    
+    def logged_in_user
+      unless logged_in?
+        flash[:danger] = 'Please log in.'
+        redirect_to login_url
+      end
+    end
+    
+    def admin_user
+      unless current_user.admin?
+        flash[:danger] = 'Not authorized'
+        redirect_to root_url
+      end
     end
 end
