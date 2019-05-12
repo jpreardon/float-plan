@@ -35,7 +35,7 @@ class BoatsController < ApplicationController
   end
   
   def index
-    @boats = Boat.all.order('number')
+    @boats = Boat.all.order('CAST(number AS int)')
   end
   
   def destroy

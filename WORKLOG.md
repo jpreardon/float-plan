@@ -28,6 +28,7 @@
   - Swap out boat index page for static fleet page
   - Restrict boat view to logged in users, add destroy method and tests
   - Add new boat button to index page
+  - Cast number as int to properly order boats index
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins
