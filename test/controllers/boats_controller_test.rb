@@ -32,6 +32,7 @@ class BoatsControllerTest < ActionDispatch::IntegrationTest
       delete boat_path(@boat)
     end
     assert_not flash.empty?
+    assert_redirected_to boats_path
   end
   
   test "non-admins can not access new/edit boats" do

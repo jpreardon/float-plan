@@ -1,5 +1,11 @@
 <% provide(:title, 'Fleet') %>
 <h1>Fleet</h1>
+
+<% if current_user.admin? %>
+  <%= link_to "New boat", new_boat_path, class: "btn btn-outline-secondary" %>
+  <hr>
+<% end %>
+
 <div class="table-responsive">
     <table class="table table-hover">
         <thead>

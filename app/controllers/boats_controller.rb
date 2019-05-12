@@ -41,6 +41,7 @@ class BoatsController < ApplicationController
   def destroy
     Boat.find(params[:id]).destroy
     flash[:success] = 'Boat deleted'
+    redirect_to boats_path
   end
 
   private
