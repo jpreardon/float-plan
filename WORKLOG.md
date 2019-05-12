@@ -2,11 +2,10 @@
 
 ## TODO
 
-- Fleet Pages
 - Restrict adding/destroying users to admins
 - Restrict views to users
 - Restrict views to admins
-- Email new users login token
+- Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Wire up new float plan view
 - Wire up float plan list view
 - "Remember me" from more than one browser
@@ -15,6 +14,8 @@
 
 ## 2019-05-12
 
+- Fleet Pages
+  - Generate boats controller
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins

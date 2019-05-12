@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get   '/float_plans/new', to: 'static_pages#new_float_plan'
   get   '/login',           to: 'sessions#new'
   post  '/login',           to: 'sessions#create'
-  delete   '/logout',          to: 'sessions#destroy'
-  resources :users
+  delete   '/logout',       to: 'sessions#destroy'
+  resources :users, :boats
 end
