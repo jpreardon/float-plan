@@ -22,6 +22,7 @@
   - Add validations and tests to the boat model
 - Refactor users list
 - Add user destroy function
+- Hide edit/delete buttons from non-admins
 
 ## 2019-05-11
 
