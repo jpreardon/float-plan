@@ -29,6 +29,7 @@
   - Restrict boat view to logged in users, add destroy method and tests
   - Add new boat button to index page
   - Cast number as int to properly order boats index
+  - Add unique index to boat number
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins
