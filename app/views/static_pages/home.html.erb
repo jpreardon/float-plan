@@ -1,18 +1,40 @@
-<div class="jumbotron">
-    <h1 class="display-4">Welcome!</h1>
-    <p class="lead">This is the <%= app_name %> pilot</p>
-    <hr>
-    <p>Ready to go sailing? Please sign in.</p>
-    <%= link_to 'Sign in', login_path, class: 'btn btn-primary btn-lg' %>
-</div>
+<% if logged_in? %>
 
-<div class="row">
-  <div class="col-lg-6">
-    <h2>What's happening here?</h2>
-    <p>This application is in pilot mode at the moment. If you don't have a sign in, dont' worry, you'll get one when the bugs have been worked out.</p>
-    <p>In the meantime, please use a printed float plan.</p>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Thank you!</h2>
+      <p>
+        Thanks for being a pilot user of the Float Plan application. There will
+        likely be some issues here and there. If you have any problems or 
+        suggestions, please send feedback to <%= mail_to 'floatplan@ncs.com' %>. 
+      </p>
+      <p>If you are having a problem with this application that's preventing you
+      from filling out a float plan, please use a printed float plan.</p>
+    </div>
+    <div class="col-lg-6">
+      <%= image_tag "north-cove.jpg", class: "img-fluid" %>
+    </div>
   </div>
-  <div class="col-lg-6">
-    <%= image_tag "north-cove.jpg", class: "img-fluid" %>
+
+<% else %>
+
+  <div class="jumbotron">
+      <h1 class="display-4">Welcome!</h1>
+      <p class="lead">This is the <%= app_name %> pilot</p>
+      <hr>
+      <p>Ready to go sailing? Please sign in.</p>
+      <%= link_to 'Sign in', login_path, class: 'btn btn-primary btn-lg' %>
   </div>
-</div>
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>What's happening here?</h2>
+      <p>This application is in pilot mode at the moment. If you don't have a sign in, dont' worry, you'll get one when the bugs have been worked out.</p>
+      <p>In the meantime, please use a printed float plan.</p>
+    </div>
+    <div class="col-lg-6">
+      <%= image_tag "north-cove.jpg", class: "img-fluid" %>
+    </div>
+  </div>
+
+<% end %>
