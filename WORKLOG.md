@@ -21,6 +21,7 @@
   - Refactor shared errors partial to accept objects
   - Add validations and tests to the boat model
   - Add integration tests for boat save/show
+  - Refactor new boat form to partial
 - Refactor users list
 - Add user destroy function
 - Hide edit/delete buttons from non-admins
