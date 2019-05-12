@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Fleet Pages
 - Restrict adding/destroying users to admins
 - Restrict views to users
 - Restrict views to admins
@@ -11,6 +12,10 @@
 - "Remember me" from more than one browser
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
+
+## 2019-05-12
+
+- Refactor users list
 
 ## 2019-05-11
 
