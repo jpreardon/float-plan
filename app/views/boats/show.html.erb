@@ -1,0 +1,25 @@
+<% #TODO: This is a mess, make it a helper 2010-05-12 %>
+<% if @boat.name.empty? %>
+<% title = "Boat number #{@boat.number}" %>
+<% else %>
+<% title = "Boat number #{@boat.number} - #{@boat.name}" %>
+<% end %>
+<% provide(:title, title) %>
+<div class="row">
+  <div class="col">
+    <h2><%= title %></h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @boat.note %>
+  </div>
+</div>
+
+<% if current_user.admin? %>
+  <hr>
+  <%= link_to "Edit boat", edit_boat_path, class: "btn btn-outline-primary" %>
+  <%= link_to "Delete boat", @boat,  method: :delete, 
+                                    data: { confirm: 'Are you sure?' },
+                                    class: "btn btn-outline-danger" %>
+<% end %>
