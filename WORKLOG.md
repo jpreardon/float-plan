@@ -12,6 +12,7 @@
 
 ## 2019-05-12
 
+- Hide last column on index pages on medium and smaller
 - Add cancel buttons to edit pages
 - Restrict static pages to users
 - Link to edit pager directly from boats index, don't show links to non-admins

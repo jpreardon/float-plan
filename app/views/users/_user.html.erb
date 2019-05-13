@@ -9,5 +9,5 @@
   </td>
   <td><%= link_to "#{user.first_name} #{user.last_name}", user %></td>
   <td><%= link_to number_to_phone(user.mobile, area_code: true), "tel:+1#{user.mobile}" %></td>
-  <td><%= mail_to user.email %></td>
+  <td class="d-none d-md-table-cell"><%= mail_to user.email %></td>
 </tr>
