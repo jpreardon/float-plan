@@ -12,6 +12,7 @@
 
 ## 2019-05-12
 
+- Add cancel buttons to edit pages
 - Restrict static pages to users
 - Link to edit pager directly from boats index, don't show links to non-admins
 - Add a logged in version of the home page.
