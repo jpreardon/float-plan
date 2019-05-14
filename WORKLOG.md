@@ -17,6 +17,7 @@
   - Generate plan model and plans controller
   - Add routes
   - Add new view, as well as new and create actions. Change name of tide column to current.
+  - Add some helper text to the new float plan form
 
 ## 2019-05-12
 

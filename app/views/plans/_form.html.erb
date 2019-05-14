@@ -11,7 +11,7 @@
   <div class="form-group">
     <%= f.label :weather_forecast %>
     <%= f.text_area :weather_forecast, class: 'form-control' %>
-    <small id="mobileHelp" class="form-text text-muted">Include wind direction, speed, and any else of note</small>
+    <small id="weatherHelp" class="form-text text-muted">Include wind direction, speed, and any else of note</small>
   </div>
   
   <fieldset class="form-group">
@@ -42,11 +42,13 @@
     <div class="form-check">
       <%= f.check_box :checkout_complete, class: 'form-check-input' %>
       <%= f.label :checkout_complete, class: 'form-check-label' %>
+    </div>
   </div>
 
   <div class="form-group">
-    <%= f.label :notes_out %>
+    <%= f.label :notes_out, 'Checkout Notes' %>
     <%= f.text_area :notes_out, class: 'form-control' %>
+    <small id="notesOutHelp" class="form-text text-muted">Note missing or damaged gear and other issues with the boat.</small>
   </div>
   
   <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
