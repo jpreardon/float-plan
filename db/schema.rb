@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_14_011025) do
+ActiveRecord::Schema.define(version: 2019_05_14_013805) do
 
   create_table "boats", force: :cascade do |t|
     t.string "number"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_05_14_011025) do
   create_table "plans", force: :cascade do |t|
     t.datetime "time_out"
     t.text "weather_forecast"
-    t.string "tide"
+    t.string "current"
     t.string "direction"
     t.boolean "checkout_complete"
     t.text "notes_out"

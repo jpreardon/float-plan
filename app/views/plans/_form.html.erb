@@ -1,0 +1,139 @@
+<p>Please fill out completely. If you can not submit this form for some reason, fill out a paper form instead.</p>
+<%= form_for(@plan) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="form-group">
+    <%= f.label :time_out %>
+    <%= f.datetime_select :time_out, {ampm: true}, value: Time.zone.now, class: 'form-control' %>
+  </div>
+  
+  <p>Boat and Skipper information will go here.</p>
+  
+  <div class="form-group">
+    <%= f.label :weather_forecast %>
+    <%= f.text_area :weather_forecast, class: 'form-control' %>
+    <small id="mobileHelp" class="form-text text-muted">Include wind direction, speed, and any else of note</small>
+  </div>
+  
+  <fieldset class="form-group">
+    <legend class="col-form-label">Current Direction</legend>
+    <div class="form-check">
+        <%= f.radio_button :current, 'Ebb', class: 'form-check-input' %>
+        <%= f.label :current_ebb, 'Ebb' %>
+    </div>
+    <div class="form-check">
+        <%= f.radio_button :current, 'Flood', class: 'form-check-input' %>
+        <%= f.label :current_flood, 'Flood' %>
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <legend class="col-form-label">Direction you will sail</legend>
+    <div class="form-check">
+        <%= f.radio_button :direction, 'North', class: 'form-check-input' %>
+        <%= f.label :direction_north, 'North' %>
+    </div>
+    <div class="form-check">
+        <%= f.radio_button :direction, 'South', class: 'form-check-input' %>
+        <%= f.label :direction_south, 'South' %>
+    </div>
+  </fieldset>
+
+  <div class="form-group">
+    <div class="form-check">
+      <%= f.check_box :checkout_complete, class: 'form-check-input' %>
+      <%= f.label :checkout_complete, class: 'form-check-label' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :notes_out %>
+    <%= f.text_area :notes_out, class: 'form-control' %>
+  </div>
+  
+  <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
+  <%= link_to "Cancel", :back,  class: 'btn btn-outline-secondary' %>
+     
+<% end %>
+
+
+<div class="wireframe">
+  <p>
+   :time_in, :checkin_complete, :notes_in need to come when the skipper is
+   completing the checklist. The crew and guest information is missing here
+   too. The original checklists appear below.
+  </p>
+  <%= form_tag do %>
+    <fieldset class="form-group">
+        <legend class="col-form-label-lg">Crew</legend>
+        <%= label_tag :crew1, 'Name 1' %>
+        <%= text_field_tag :crew1, '', class: 'form-control' %>
+        <%= label_tag :crew1, 'Name 2' %>
+        <%= text_field_tag :crew2, '', class: 'form-control' %>
+        <%= label_tag :crew3, 'Name 3' %>
+        <%= text_field_tag :crew3, '', class: 'form-control' %>
+        <%= label_tag :crew4, 'Name 4' %>
+        <%= text_field_tag :crew4, '', class: 'form-control' %>
+        <%= label_tag :crew5, 'Name 5' %>
+        <%= text_field_tag :crew5, '', class: 'form-control' %>
+    </fieldset>
+    <fieldset class="form-group">
+        <legend class="col-form-label-lg">Pre-departure Checklist</legend>
+        <div class="form-group">
+            <%= label_tag :weather, 'Weather Forecast' %>
+            <%= text_field_tag :weather, '', class: 'form-control' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :fuel, '', false, class: 'form-check-input' %>
+            <%= label_tag :fuel, 'fuel' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :vhf, '', false, class: 'form-check-input' %>
+            <%= label_tag :vhf, 'vhf' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :throw_line, '', false, class: 'form-check-input' %>
+            <%= label_tag :throw_line, 'throw line' %>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <%= label_tag :missing, 'Missing or Damaged Gear' %>
+        <%= text_field_tag :missing, '', class: 'form-control' %>
+    </div>
+  
+          
+          
+    <h3>Return Checklist</h3>
+    <p>This checklist will appear when the boat returns.</p>
+  
+    <div class="form-group">
+        <%= label_tag :arrival_time, 'Arrival Time' %>
+        <%= time_field_tag :arrival_time, '', class: 'form-control' %>
+    </div>
+    <fieldset class="form-group">
+        <legend class="col-form-label-lg">Derigging Checklist</legend>
+        <div class="form-check">
+            <%= check_box_tag :lines, '', false, class: 'form-check-input' %>
+            <%= label_tag :lines, 'lines coiled' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :tiller, '', false, class: 'form-check-input' %>
+            <%= label_tag :tiller, 'tiller lashed (with clove hitch)' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :backstay, '', false, class: 'form-check-input' %>
+            <%= label_tag :backstay, 'backstay loose' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :engine, '', false, class: 'form-check-input' %>
+            <%= label_tag :engine, 'engine out of water' %>
+        </div>
+        <div class="form-check">
+            <%= check_box_tag :rinse, '', false, class: 'form-check-input' %>
+            <%= label_tag :rinse, 'deck rinsed' %>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <%= label_tag :missing2, 'Missing or Damaged Gear' %>
+        <%= text_field_tag :missing2, '', class: 'form-control' %>
+    </div>
+  <% end %>
+</div>

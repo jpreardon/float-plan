@@ -15,5 +15,8 @@ module FloatPlan
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+    
+    # Set the time zone, our club is in NYC 2019-05-13 JPR
+    config.time_zone = 'Eastern Time (US & Canada)'
   end
 end
