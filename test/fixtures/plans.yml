@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time_out: 2019-05-14 01:10:25
+  time_in: 
+  weather_forecast: MyText
+  tide: MyString
+  direction: MyString
+  checkout_complete: false
+  notes_out: MyText
+  checkin_complete: false
+  notes_in: MyText
+
+two:
+  time_out: 2019-05-14 01:10:25
+  time_in: 
+  weather_forecast: MyText
+  tide: MyString
+  direction: MyString
+  checkout_complete: false
+  notes_out: MyText
+  checkin_complete: false
+  notes_in: MyText

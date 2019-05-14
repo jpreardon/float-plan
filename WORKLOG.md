@@ -2,13 +2,18 @@
 
 ## TODO
 
-- Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Wire up new float plan view
 - Wire up float plan list view
+- Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
 - "Remember me" from more than one browser
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
+
+## 2019-05-13
+
+- Float Plans!
+  - Generate plan model and plans controller
 
 ## 2019-05-12
 
