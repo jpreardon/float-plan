@@ -14,12 +14,13 @@
 
 - Float Plans!
   - Generate plan model and plans controller
+  - Add routes
 
 ## 2019-05-12
 
 - Hide last column on index pages on medium and smaller
 - Add cancel buttons to edit pages
-- Restrict static pages to users
+- Restrict static pages to users  
 - Link to edit pager directly from boats index, don't show links to non-admins
 - Add a logged in version of the home page.
 - Fleet Pages
