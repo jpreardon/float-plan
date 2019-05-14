@@ -1,0 +1,19 @@
+<% provide(:title, 'Float Plans') %>
+<h1>Float Plans</h1>
+
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Out</th>
+                <th scope="col">In</th>
+                <th scope="col">Direction</th>
+                <th scope="col">Note</th>
+            </tr>
+        </thead>
+        <tbody>
+          <%= render @plans %>
+        </tbody>
+    </table>
+</div>

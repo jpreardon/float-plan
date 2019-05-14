@@ -15,6 +15,10 @@ class PlansController < ApplicationController
     end
   end
   
+  def index
+    @plans = Plan.all
+  end
+  
   private
     
     def plan_params

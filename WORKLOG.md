@@ -2,8 +2,12 @@
 
 ## TODO
 
-- Wire up new float plan view
-- Wire up float plan list view
+- Float Plans
+  - Tests!
+  - Figure out how to separate checkouts and checkins
+  - Wire up new float plan view
+  - Save picture of original float plan mockup
+  - Wire up float plan list view
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
@@ -18,6 +22,7 @@
   - Add routes
   - Add new view, as well as new and create actions. Change name of tide column to current.
   - Add some helper text to the new float plan form
+  - Add basic index page
 
 ## 2019-05-12
 

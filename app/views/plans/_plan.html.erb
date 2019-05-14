@@ -1,0 +1,7 @@
+<tr>
+  <td><%= plan.time_out.nil? ? '--' : plan.time_out.strftime('%d-%b-%Y') %></td>
+  <td><%= plan.time_out.nil? ? '--' : plan.time_out.strftime('%l:%M %p') %></td>
+  <td><%= plan.time_in.nil? ? '--' : plan.time_out.strftime('%l:%M %p') %></td>
+  <td><%= plan.direction %></td>
+  <td><%= plan.notes_out %></td>
+</tr>
