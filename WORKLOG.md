@@ -5,8 +5,6 @@
 - Float Plans
   - Tests!
   - Figure out how to separate checkouts and checkins
-  - Wire up new float plan view
-  - Wire up float plan list view
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
@@ -19,6 +17,7 @@
 
 - Float Plans
   - Put an image of the original Float Plan mockup in the design folder
+  - Add basic show, edit and update plans
 
 ## 2019-05-13
 

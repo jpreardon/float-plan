@@ -1,0 +1,62 @@
+<% provide(:title, 'Float Plan') %>
+<div class="row">
+  <div class="col">
+    <h2>Float Plan</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.time_out %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.weather_forecast %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.current %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.direction %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.checkout_complete %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.notes_out %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.time_in %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.checkin_complete %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <%= @plan.notes_in %>
+  </div>
+</div>
+
+
+
+<% if current_user.admin? %>
+  <hr>
+  <%= link_to "Edit plan", edit_plan_path, class: "btn btn-outline-primary" %>
+  <%= link_to "Delete plan", @plan,  method: :delete, 
+                                    data: { confirm: 'Are you sure?' },
+                                    class: "btn btn-outline-danger" %>
+<% end %>
+

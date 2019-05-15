@@ -19,6 +19,30 @@ class PlansController < ApplicationController
     @plans = Plan.all
   end
   
+  def show
+    @plan = Plan.find(params[:id])
+  end
+  
+  def edit
+    @plan = Plan.find(params[:id])
+  end
+  
+  def update
+    @plan = @Plan.find(params[:id])
+    if @plan.update_attributes(plan_params)
+      flash[:success] = 'Plan updated'
+      redirect_to plan_path(@plan)
+    else
+      render 'edit'
+    end
+  end
+  
+  def destroy
+    Plan.find(params[:id]).destroy
+    flash[:success] = 'Plan deleted'
+    redirect_to plans_path
+  end
+  
   private
     
     def plan_params
