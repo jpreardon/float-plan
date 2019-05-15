@@ -4,6 +4,9 @@
 
 - Float Plans
   - Tests!
+  - Add associations for skippers
+  - Add associtations for boats
+  - Add associtations for crew/guests
   - Figure out how to separate checkouts and checkins
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
