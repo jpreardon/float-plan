@@ -28,7 +28,7 @@ class PlansController < ApplicationController
   end
   
   def update
-    @plan = @Plan.find(params[:id])
+    @plan = Plan.find(params[:id])
     if @plan.update_attributes(plan_params)
       flash[:success] = 'Plan updated'
       redirect_to plan_path(@plan)
