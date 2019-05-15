@@ -19,6 +19,7 @@
   - Put an image of the original Float Plan mockup in the design folder
   - Add basic show, edit and update plans
   - Remove plans fixture as it was causing massive errors (due to column name change)
+  - Remove static float plan page, hook up real float plan page
 
 ## 2019-05-13
 
