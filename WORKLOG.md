@@ -20,6 +20,7 @@
   - Add basic show, edit and update plans
   - Remove plans fixture as it was causing massive errors (due to column name change)
   - Remove static float plan page, hook up real float plan page
+  - Add new plan button to index page
 
 ## 2019-05-13
 
