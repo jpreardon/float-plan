@@ -6,7 +6,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <%= @plan.time_out %>
+    <%= @plan.date.strftime('%Y-%m-%d') %> <%= @plan.time_out.strftime('%H:%M') %>
   </div>
 </div>
 <div class="row">
@@ -32,11 +32,6 @@
 <div class="row">
   <div class="col">
     <%= @plan.notes_out %>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <%= @plan.time_in %>
   </div>
 </div>
 <div class="row">

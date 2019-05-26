@@ -16,6 +16,11 @@
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 
+## 2019-05-26
+
+- Make date/time fields more tolorable on the float plan form
+  - Separated date and times, added formats and default values.
+
 ## 2019-05-14
 
 - Float Plans

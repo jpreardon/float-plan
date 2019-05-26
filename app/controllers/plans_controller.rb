@@ -46,7 +46,8 @@ class PlansController < ApplicationController
   private
     
     def plan_params
-      params.require(:plan).permit( :time_out,
+      params.require(:plan).permit( :date,
+                                    :time_out,
                                     :weather_forecast,
                                     :current,
                                     :direction,
