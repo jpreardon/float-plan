@@ -29,20 +29,20 @@ module ApplicationHelper
   
   # These are used (mostly) to enter default values in forms
   def format_date_html(date)
-    return date.strftime('%Y-%m-%d')
+    date.nil? ? date : date.strftime('%Y-%m-%d')
   end
   
   def format_time_html(time)
-    return time.strftime('%H:%M') 
+    time.nil? ? time : time.strftime('%H:%M') 
   end
   
   # These are used to display dates/times to users
   def format_date_human(date)
-    return date.strftime('%m/%d/%Y')
+    date.nil? ? date : date.strftime('%m/%d/%Y')
   end
   
   def format_time_human(time)
-    return time.strftime('%l:%M %p')
+    time.nil? ? time : time.strftime('%l:%M %p')
   end
   
 end
