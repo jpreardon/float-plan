@@ -22,6 +22,7 @@
   - Add skipper select to new/edit form, show on index and show.
   - Restrict skipper selection to skippers, order by last name
   - Remove skipper selection for non-admin users
+  - Add skipper ID as hidden field when there is no skipper select
 
 ## 2019-05-26
 
