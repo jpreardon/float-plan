@@ -20,6 +20,7 @@
 
 - Make date/time fields more tolorable on the float plan form
   - Separated date and times, added formats and default values.
+  - Move date and time formatting to a helper functions
 
 ## 2019-05-14
 

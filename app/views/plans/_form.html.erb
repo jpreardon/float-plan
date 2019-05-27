@@ -5,7 +5,7 @@
   <div class="form-group">
     <%= f.label :date %>
     <%= f.date_field :date, 
-        value: @plan.date.nil? ? Time.zone.now.strftime('%Y-%m-%d') : @plan.date.strftime('%Y-%m-%d'), 
+        value: @plan.date.nil? ? format_date_html(Time.zone.now) : format_date_html(@plan.date), 
         class: 'form-control' 
     %>
   </div>
@@ -13,7 +13,7 @@
   <div class="form-group">
     <%= f.label :time_out %>
     <%= f.time_field :time_out, 
-        value: @plan.time_out.nil? ? Time.zone.now.strftime('%H:%M') : @plan.time_out.strftime('%H:%M'), 
+        value: @plan.time_out.nil? ? format_time_html(Time.zone.now) : format_time_html(@plan.time_out), 
         class: 'form-control' 
     %>
   </div>

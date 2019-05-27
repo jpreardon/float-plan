@@ -1,7 +1,7 @@
 <tr>
-  <td><%= link_to plan.date.nil? ? '--' : plan.date.strftime('%d-%b-%Y'), plan_path(plan) %></td>
-  <td><%= plan.time_out.nil? ? '--' : plan.time_out.strftime('%l:%M %p') %></td>
-  <td><%= plan.time_in.nil? ? '--' : plan.time_in.strftime('%l:%M %p') %></td>
+  <td><%= link_to plan.date.nil? ? '--' : format_date_human(plan.date), plan_path(plan) %></td>
+  <td><%= plan.time_out.nil? ? '--' : format_time_human(plan.time_out) %></td>
+  <td><%= plan.time_in.nil? ? '--' : format_time_human(plan.time_in) %></td>
   <td><%= plan.direction %></td>
   <td><%= plan.notes_out %></td>
 </tr>

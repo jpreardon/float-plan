@@ -6,7 +6,7 @@
 </div>
 <div class="row">
   <div class="col">
-    <%= @plan.date.strftime('%Y-%m-%d') %> <%= @plan.time_out.strftime('%H:%M') %>
+    <%= format_date_human(@plan.date) %> <%= format_time_human(@plan.time_out) %>
   </div>
 </div>
 <div class="row">
