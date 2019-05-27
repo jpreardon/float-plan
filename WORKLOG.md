@@ -24,6 +24,7 @@
   - Restrict skipper selection to skippers, order by last name
   - Remove skipper selection for non-admin users
   - Add skipper ID as hidden field when there is no skipper select
+  - Style skipper field as readonly for skippers
 - Allow skippers to edit their float plans (and only their float plans)
 
 ## 2019-05-26

@@ -10,7 +10,7 @@
     <% if current_user.admin? %>
       <%= f.collection_select(:skipper_id, User.where(skipper: true).order(:last_name), :id, :full_name, { include_blank: 'Select...' }, { class: 'form-control' }) %>
     <% else %>
-      <span class="form-control"><%= @plan.skipper.full_name %> </span>
+      <span class="form-control" readonly><%= @plan.skipper.full_name %> </span>
       <%= f.hidden_field :skipper_id %>
     <% end %>
   </div>
