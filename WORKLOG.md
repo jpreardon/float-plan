@@ -22,7 +22,8 @@
   - Move date and time formatting to a helper functions
   - Make sure date/time formatting helpers don't fail when giving nil
 - Add associtations for boats
-  - Add boats association to plans
+  - Add boat association to plans
+  - Show boat on plan forms
 
 ## 2019-05-14
 

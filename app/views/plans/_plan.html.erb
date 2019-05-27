@@ -1,7 +1,8 @@
 <tr>
-  <td><%= link_to plan.date.nil? ? '--' : format_date_human(plan.date), plan_path(plan) %></td>
-  <td><%= plan.time_out.nil? ? '--' : format_time_human(plan.time_out) %></td>
-  <td><%= plan.time_in.nil? ? '--' : format_time_human(plan.time_in) %></td>
+  <td><%= link_to nil_placeholder(format_date_human(plan.date)), plan_path(plan) %></td>
+  <td><%= nil_placeholder(format_time_human(plan.time_out)) %></td>
+  <td><%= nil_placeholder(format_time_human(plan.time_in)) %></td>
+  <td><%= nil_placeholder(plan.boat.label) %></td>
   <td><%= plan.direction %></td>
   <td><%= plan.notes_out %></td>
 </tr>

@@ -45,4 +45,8 @@ module ApplicationHelper
     time.nil? ? time : time.strftime('%l:%M %p')
   end
   
+  # Use a "nice" placeholder for nils 2019-05-26 JPR
+  def nil_placeholder(field)
+    field.nil? ? '--' : field
+  end
 end
