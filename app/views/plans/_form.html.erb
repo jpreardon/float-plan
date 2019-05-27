@@ -1,6 +1,19 @@
 <p>Please fill out completely. If you can not submit this form for some reason, fill out a paper form instead.</p>
+<% if @plan.skipper.nil? %>
+<%   @plan.skipper = current_user %>
+<% end %>
 <%= form_for(@plan) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+  
+  <div class="form-group">
+    <%= f.label :skipper_id %>
+    <% if current_user.admin? %>
+      <%= f.collection_select(:skipper_id, User.where(skipper: true).order(:last_name), :id, :full_name, { include_blank: 'Select...' }, { class: 'form-control' }) %>
+    <% else %>
+      <span class="form-control"><%= @plan.skipper.full_name %> </span>
+    <% end %>
+  </div>
+  
   <div class="form-group">
     <%= f.label :date %>
     <%= f.date_field :date, 
@@ -19,11 +32,6 @@
   <div class="form-group">
     <%= f.label :boat_id %>
     <%= f.collection_select(:boat_id, Boat.order(Arel.sql('CAST(number AS int)')), :id, :label, { include_blank: 'Select...' }, { class: 'form-control' }) %>
-  </div>
-  
-  <div class="form-group">
-    <%= f.label :skipper_id %>
-    <%= f.collection_select(:skipper_id, User.where(skipper: true).order(:last_name), :id, :full_name, { include_blank: 'Select...' }, { class: 'form-control' }) %>
   </div>
   
   <div class="form-group">

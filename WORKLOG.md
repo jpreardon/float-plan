@@ -4,6 +4,7 @@
 
 - Float Plans
   - Tests!
+  - Allow skippers to edit their float plans (and only their float plans)
   - Figure out how to separate checkouts and checkins
   - Add associtations for crew/guests
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
@@ -20,6 +21,7 @@
   - Add skipper association between plans and users.
   - Add skipper select to new/edit form, show on index and show.
   - Restrict skipper selection to skippers, order by last name
+  - Remove skipper selection for non-admin users
 
 ## 2019-05-26
 
