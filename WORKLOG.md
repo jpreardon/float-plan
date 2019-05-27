@@ -4,9 +4,10 @@
 
 - Float Plans
   - Tests!
-  - Allow skippers to edit their float plans (and only their float plans)
+    - Test to make sure skippers can only edit their own plans 
   - Figure out how to separate checkouts and checkins
   - Add associtations for crew/guests
+  - Don't allow skippers to delete their float plans after they are complete
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
@@ -23,6 +24,7 @@
   - Restrict skipper selection to skippers, order by last name
   - Remove skipper selection for non-admin users
   - Add skipper ID as hidden field when there is no skipper select
+- Allow skippers to edit their float plans (and only their float plans)
 
 ## 2019-05-26
 
