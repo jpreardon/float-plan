@@ -5,7 +5,6 @@
 - Float Plans
   - Tests!
   - Add associations for skippers
-  - Add associtations for boats
   - Add associtations for crew/guests
   - Figure out how to separate checkouts and checkins
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
@@ -22,6 +21,8 @@
   - Separated date and times, added formats and default values.
   - Move date and time formatting to a helper functions
   - Make sure date/time formatting helpers don't fail when giving nil
+- Add associtations for boats
+  - Add boats association to plans
 
 ## 2019-05-14
 

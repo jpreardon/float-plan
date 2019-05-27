@@ -1,7 +1,6 @@
 <p>Please fill out completely. If you can not submit this form for some reason, fill out a paper form instead.</p>
 <%= form_for(@plan) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  
   <div class="form-group">
     <%= f.label :date %>
     <%= f.date_field :date, 
@@ -9,7 +8,6 @@
         class: 'form-control' 
     %>
   </div>
-  
   <div class="form-group">
     <%= f.label :time_out %>
     <%= f.time_field :time_out, 
@@ -18,7 +16,11 @@
     %>
   </div>
   
-  <p>Boat and Skipper information will go here.</p>
+  <div class="form-group">
+    <%= f.label :boat %>
+  </div>
+  
+  <p>Skipper information will go here.</p>
   
   <div class="form-group">
     <%= f.label :weather_forecast %>
