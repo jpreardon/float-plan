@@ -6,7 +6,6 @@
   - Tests!
     - Test to make sure skippers can only edit their own plans 
   - Figure out how to separate checkouts and checkins
-  - Add associtations for crew/guests
   - Don't allow skippers to delete their float plans after they are complete
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
@@ -26,6 +25,9 @@
   - Add skipper ID as hidden field when there is no skipper select
   - Style skipper field as readonly for skippers
 - Allow skippers to edit their float plans (and only their float plans)
+- Add associtations for crew/guests
+  - Add crew association between plans and users. Display crew list on show form. 
+  - Need to figure out some typeahead, maybe [this](https://stackoverflow.com/questions/34465104/autocomplete-many-to-many-rails-4) will work.
 
 ## 2019-05-26
 

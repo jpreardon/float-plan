@@ -9,6 +9,15 @@
     <%= @plan.skipper.full_name %>
   </div>
 </div>
+<%if @plan.crew.size > 0 %>
+  <% @plan.crew.each do |crew| %>
+    <div class="row">
+      <div class="col">
+        <%= crew.full_name %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
 <div class="row">
   <div class="col">
     <%= format_date_human(@plan.date) %> <%= format_time_human(@plan.time_out) %>
