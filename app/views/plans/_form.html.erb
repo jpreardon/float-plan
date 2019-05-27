@@ -23,7 +23,7 @@
   
   <div class="form-group">
     <%= f.label :skipper_id %>
-    <%= f.collection_select(:skipper_id, User.all, :id, :last_name, { include_blank: 'Select...' }, { class: 'form-control' }) %>
+    <%= f.collection_select(:skipper_id, User.where(skipper: true).order(:last_name), :id, :full_name, { include_blank: 'Select...' }, { class: 'form-control' }) %>
   </div>
   
   <div class="form-group">
