@@ -18,6 +18,7 @@
 
 - Add associations for skippers
   - Add skipper association between plans and users.
+  - Add skipper select to new/edit form, show on index and show.
 
 ## 2019-05-26
 

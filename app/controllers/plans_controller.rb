@@ -56,7 +56,8 @@ class PlansController < ApplicationController
                                     :time_in,
                                     :checkin_complete,
                                     :notes_in,
-                                    :boat_id)
+                                    :boat_id,
+                                    :skipper_id)
     end
     
     def logged_in_user

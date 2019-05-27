@@ -3,6 +3,7 @@
   <td><%= nil_placeholder(format_time_human(plan.time_out)) %></td>
   <td><%= nil_placeholder(format_time_human(plan.time_in)) %></td>
   <td><%= nil_placeholder(plan.boat.number) %></td>
+  <td><%= link_to "#{plan.skipper.first_name} #{plan.skipper.last_name}", "tel:#{plan.skipper.mobile}" %></td>
   <td><%= plan.direction %></td>
   <td><%= plan.notes_out %></td>
 </tr>

@@ -6,6 +6,11 @@
 </div>
 <div class="row">
   <div class="col">
+    <%= "#{@plan.skipper.first_name} #{@plan.skipper.last_name}" %>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
     <%= format_date_human(@plan.date) %> <%= format_time_human(@plan.time_out) %>
   </div>
 </div>
