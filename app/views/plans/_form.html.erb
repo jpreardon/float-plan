@@ -18,7 +18,7 @@
   
   <div class="form-group">
     <%= f.label :boat_id %>
-    <%= f.collection_select(:boat_id, Boat.all, :id, :label, {include_blank: 'Select...'}, { class: 'form-control' }) %>
+    <%= f.collection_select(:boat_id, Boat.order(Arel.sql('CAST(number AS int)')), :id, :label, {include_blank: 'Select...'}, { class: 'form-control' }) %>
   </div>
   
   <p>Skipper information will go here.</p>

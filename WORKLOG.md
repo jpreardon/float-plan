@@ -24,6 +24,7 @@
 - Add associtations for boats
   - Add boat association to plans
   - Show boat on plan forms
+  - Show only boat number on plan list, order boat dropdown by number.
 
 ## 2019-05-14
 
