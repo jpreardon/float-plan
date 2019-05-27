@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :plans
   attr_accessor :remember_token
   before_save { email.downcase! }
   validates :first_name, presence: true, length: { maximum: 20 }
