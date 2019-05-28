@@ -5,10 +5,12 @@
 - Float Plans
   - Tests!
     - Test to make sure skippers can only edit their own plans 
+  - Add a guest textbox (temporary)
   - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
+- Better typeahead for mobile (adding crew) (chosen doesn't work at all)
 - Create a better fleet view like the [original design](design/fleet-screen-mockup.png)
 - Create a better float plan view like the [original design](design/float-plan-screen-mockup.png)
 - "Remember me" from more than one browser
