@@ -18,3 +18,5 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+// Added for chosen 2019-05-27 JPR
+//= require chosen-jquery

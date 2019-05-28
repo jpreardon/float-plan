@@ -57,7 +57,8 @@ class PlansController < ApplicationController
                                     :checkin_complete,
                                     :notes_in,
                                     :boat_id,
-                                    :skipper_id)
+                                    :skipper_id,
+                                    { crew_ids: [] })
     end
     
     def logged_in_user
