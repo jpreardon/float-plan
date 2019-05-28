@@ -28,6 +28,7 @@
 - Add associtations for crew/guests
   - Add crew association between plans and users. Display crew list on show form. 
   - Add a typeahead function to add crew. [This](https://stackoverflow.com/questions/34465104/autocomplete-many-to-many-rails-4), [this](https://github.com/tsechingho/chosen-rails), and [this](https://harvesthq.github.io/chosen/) were helpful.
+  - Add number of crew to index page.
 
 ## 2019-05-26
 

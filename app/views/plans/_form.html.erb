@@ -99,23 +99,10 @@
 <div class="wireframe">
   <p>
    :time_in, :checkin_complete, :notes_in need to come when the skipper is
-   completing the checklist. The crew and guest information is missing here
+   completing the checklist. The guest information is missing here
    too. The original checklists appear below.
   </p>
   <%= form_tag do %>
-    <fieldset class="form-group">
-        <legend class="col-form-label-lg">Crew</legend>
-        <%= label_tag :crew1, 'Name 1' %>
-        <%= text_field_tag :crew1, '', class: 'form-control' %>
-        <%= label_tag :crew1, 'Name 2' %>
-        <%= text_field_tag :crew2, '', class: 'form-control' %>
-        <%= label_tag :crew3, 'Name 3' %>
-        <%= text_field_tag :crew3, '', class: 'form-control' %>
-        <%= label_tag :crew4, 'Name 4' %>
-        <%= text_field_tag :crew4, '', class: 'form-control' %>
-        <%= label_tag :crew5, 'Name 5' %>
-        <%= text_field_tag :crew5, '', class: 'form-control' %>
-    </fieldset>
     <fieldset class="form-group">
         <legend class="col-form-label-lg">Pre-departure Checklist</legend>
         <div class="form-group">
