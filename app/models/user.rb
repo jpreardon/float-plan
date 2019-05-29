@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :plans, foreign_key: 'skipper_id'
-  has_and_belongs_to_many :trips, class_name: 'Plan', join_table: 'crew_plans', foreign_key: 'crew_id'
+  has_and_belongs_to_many :trips, class_name: 'Plan', join_table: 'crew_trips'
   attr_accessor :remember_token
   before_save { email.downcase! }
   validates :first_name, presence: true, length: { maximum: 20 }

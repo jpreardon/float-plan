@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_27_153513) do
+ActiveRecord::Schema.define(version: 2019_05_29_225226) do
 
   create_table "boats", force: :cascade do |t|
     t.string "number"
@@ -21,11 +21,11 @@ ActiveRecord::Schema.define(version: 2019_05_27_153513) do
     t.index ["number"], name: "index_boats_on_number", unique: true
   end
 
-  create_table "crew_plans", id: false, force: :cascade do |t|
-    t.integer "crew_id"
+  create_table "crew_trips", id: false, force: :cascade do |t|
+    t.integer "user_id"
     t.integer "plan_id"
-    t.index ["crew_id"], name: "index_crew_plans_on_crew_id"
-    t.index ["plan_id"], name: "index_crew_plans_on_plan_id"
+    t.index ["plan_id"], name: "index_crew_trips_on_plan_id"
+    t.index ["user_id"], name: "index_crew_trips_on_user_id"
   end
 
   create_table "plans", force: :cascade do |t|

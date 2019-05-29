@@ -16,6 +16,15 @@
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 
+
+## 2019-05-29
+
+There are two many-to-many associations between users and plans. One for the skipper, and one for the crew. The plan has a skipper, and a crew collection. One the user side, plans refers to float plans one has created while trips refer to times that one has been crew. Originally, I had called both of those associations ":plans" in the user model, but that doesn't work very well. Yesterday, I changed the crew association to ":trips". I wanted to rename the join table and clean up any other mess left behind by the original, broken implementation--before I started really using the trips collection.
+
+As I'm writing this, I'm thinking that I could consolodate into one plans or trips collection and have a skipper flag on the join table. Having a separate skipper_id foreign key makes it a little easier when rendering, I think. So, I'll leave it the way it is for now, but making the above naming changes allows for putting the skipper identifier in the crew/trip join table.
+
+- Rename crew_plans table to crew_trips. Change foreign key names to match primary keys. Remove extra foreign key specs in models.
+
 ## 2019-05-28
 
 - Float plan tests
