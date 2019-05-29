@@ -24,6 +24,8 @@ There are two many-to-many associations between users and plans. One for the ski
 As I'm writing this, I'm thinking that I could consolodate into one plans or trips collection and have a skipper flag on the join table. Having a separate skipper_id foreign key makes it a little easier when rendering, I think. So, I'll leave it the way it is for now, but making the above naming changes allows for putting the skipper identifier in the crew/trip join table.
 
 - Rename crew_plans table to crew_trips. Change foreign key names to match primary keys. Remove extra foreign key specs in models.
+- Fill in skipped tests
+  - Test: Ensure that admins can see the edit link on the plan show page. 
 
 ## 2019-05-28
 

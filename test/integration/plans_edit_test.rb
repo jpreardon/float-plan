@@ -3,21 +3,27 @@ require 'test_helper'
 class PlansEditTest < ActionDispatch::IntegrationTest
   
   def setup
+    @admin = users(:david)
     @user = users(:quint)
-    @plan = plans(:davids)
+    @david_plan = plans(:davids)
+    @quint_plan = plans(:quints)
   end
   
   test 'edit button should not display on other skippers plans' do
     log_in_as(@user)
-    get plan_path(@plan)
-    assert_select 'a[href=?]', edit_plan_path(@plan), count: 0
-  end
-  
-  test 'edit button should not display after final submission' do
-    skip()
+    get plan_path(@david_plan)
+    assert_select 'a[href=?]', edit_plan_path(@david_plan), count: 0
   end
   
   test 'edit button should appear for admin users, always' do
-    skip()
+    log_in_as(@admin)
+    get plan_path(@quint_plan)
+    assert_select 'a[href=?]', edit_plan_path(@quint_plan)
+  end
+  
+  test 'edit button should not display after final submission' do
+    # We'll need to fill this in once the float plan form is closer
+    # being finished
+    skip
   end
 end
