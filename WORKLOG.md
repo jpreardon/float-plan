@@ -26,6 +26,7 @@ As I'm writing this, I'm thinking that I could consolodate into one plans or tri
 - Rename crew_plans table to crew_trips. Change foreign key names to match primary keys. Remove extra foreign key specs in models.
 - Fill in skipped tests
   - Test: Ensure that admins can see the edit link on the plan show page. 
+  - Test: Ensure some actions are restricted to skippers and admins on plans controller.
 
 ## 2019-05-28
 

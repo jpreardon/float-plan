@@ -1,6 +1,7 @@
 class PlansController < ApplicationController
   before_action :logged_in_user
-  before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :correct_user_or_admin, only: [:edit, :update, :destroy]
+  before_action :skipper_or_admin_user, only: [:create]
   
   def new
     @plan = Plan.new
@@ -69,9 +70,12 @@ class PlansController < ApplicationController
       end
     end
     
-    def correct_user
-      @plan = current_user.plans.find_by(id: params[:id])
-      redirect_to root_url if @plan.nil?
+    def correct_user_or_admin
+      @plan = Plan.find_by(id: params[:id])
+      redirect_to root_url unless current_user.admin? || @plan.skipper == current_user
     end
     
+    def skipper_or_admin_user
+      redirect_to root_url unless current_user.skipper? || current_user.admin?
+    end
 end
