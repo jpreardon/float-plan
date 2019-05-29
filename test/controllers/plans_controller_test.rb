@@ -48,6 +48,10 @@ class PlansControllerTest < ActionDispatch::IntegrationTest
     end
   end
   
+  test 'should allow destroy if admin' do
+    skip()
+  end
+  
   test 'should not allow edit if not the correct user' do
     log_in_as(@other_user)
     plan = plans(:davids)
@@ -62,7 +66,19 @@ class PlansControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to plan_path(plan)
   end
   
+  test 'should allow edit if admin' do
+    skip()
+  end
+  
   test 'non-skippers should not be able to create float plans' do
+    skip()
+  end
+  
+  test 'skipper should not be able to edit/destroy plan after final submission' do
+    skip()
+  end
+  
+  test 'admin should be able to edit/destroy plan after final submission' do
     skip()
   end
 end

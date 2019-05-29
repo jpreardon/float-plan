@@ -3,7 +3,7 @@
 ## TODO
 
 - Float Plans
-  - Tests!
+  - Fill in skipped tests
   - Add a guest textbox (temporary)
   - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
@@ -21,6 +21,7 @@
 - Float plan tests
   - Test to make sure skippers can only edit and destroy their own plans. 
   - Tests for boat model.
+  - Add test cases for plans (they are skipped for now)
 
 ## 2019-05-27
 
