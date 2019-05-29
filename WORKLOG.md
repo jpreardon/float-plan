@@ -20,6 +20,7 @@
 
 - Float plan tests
   - Test to make sure skippers can only edit and destroy their own plans. 
+  - Tests for boat model.
 
 ## 2019-05-27
 
