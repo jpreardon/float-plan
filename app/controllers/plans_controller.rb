@@ -1,5 +1,6 @@
 class PlansController < ApplicationController
   before_action :logged_in_user
+  before_action :correct_user, only: [:edit, :update, :destroy]
   
   def new
     @plan = Plan.new
@@ -66,6 +67,11 @@ class PlansController < ApplicationController
         flash[:danger] = 'Please log in.'
         redirect_to login_url
       end
+    end
+    
+    def correct_user
+      @plan = current_user.plans.find_by(id: params[:id])
+      redirect_to root_url if @plan.nil?
     end
     
 end

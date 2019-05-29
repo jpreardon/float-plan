@@ -4,7 +4,6 @@
 
 - Float Plans
   - Tests!
-    - Test to make sure skippers can only edit their own plans 
   - Add a guest textbox (temporary)
   - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
@@ -16,6 +15,11 @@
 - "Remember me" from more than one browser
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
+
+## 2019-05-28
+
+- Float plan tests
+  - Test to make sure skippers can only edit and destroy their own plans. 
 
 ## 2019-05-27
 

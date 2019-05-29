@@ -1,0 +1,31 @@
+davids:
+  time_out: '17:30'
+  weather_forecast: 'the free wind is blowin through your hair'
+  checkout_complete: true
+  notes_out: 'No rudder'
+  current: 'ebb'
+  direction: 'north'
+  checkout_complete: true
+  checkin_complete: true
+  notes_in: 'Found the rudder'
+  time_in: '19:30'
+  date: '2019-05-01'
+  boat: wasp
+  skipper: david
+  crew: quint
+  
+quints:
+  time_out: '17:30'
+  weather_forecast: 'the free wind is blowin through your hair'
+  checkout_complete: true
+  notes_out: 'No rudder'
+  current: 'ebb'
+  direction: 'north'
+  checkout_complete: true
+  checkin_complete: true
+  notes_in: 'Found the rudder'
+  time_in: '19:30'
+  date: '2019-05-01'
+  boat: wasp
+  skipper: quint
+  crew: david
