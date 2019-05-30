@@ -3,10 +3,10 @@
 ## TODO
 
 - Float Plans
-  - Fill in skipped tests
   - Add a guest textbox (temporary)
   - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
+  - Fill in skipped tests
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Better typeahead for mobile (adding crew) (chosen doesn't work at all)
@@ -28,6 +28,7 @@ As I'm writing this, I'm thinking that I could consolodate into one plans or tri
   - Test: Ensure that admins can see the edit link on the plan show page. 
   - Test: Ensure some actions are restricted to skippers and admins on plans controller.
   - Test: Ensure that crew can be edited on a plan
+  - Add messages to skipped tests.
 
 ## 2019-05-28
 

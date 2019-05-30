@@ -28,18 +28,18 @@ class PlansCreateTest < ActionDispatch::IntegrationTest
   end
  
   test 'should be able to submit first part of plan' do
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
   
   test 'should be able to edit previously entered information' do
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
   
   test 'should get second part of plan after initial submission' do
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
   
   test 'should be able to complete plan' do
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
 end

@@ -22,8 +22,6 @@ class PlansEditTest < ActionDispatch::IntegrationTest
   end
   
   test 'edit button should not display after final submission' do
-    # We'll need to fill this in once the float plan form is closer
-    # being finished
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
 end

@@ -84,14 +84,10 @@ class PlansControllerTest < ActionDispatch::IntegrationTest
   end
   
   test 'skipper should not be able to edit/destroy plan after final submission' do
-    # We'll need to fill this in once the float plan form is closer
-    # being finished
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
   
   test 'admin should be able to edit/destroy plan after final submission' do
-    # We'll need to fill this in once the float plan form is closer
-    # being finished
-    skip
+    skip 'Fill this in once the float plan form is closer being finished'
   end
 end
