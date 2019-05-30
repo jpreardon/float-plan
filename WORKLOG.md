@@ -27,6 +27,7 @@ As I'm writing this, I'm thinking that I could consolodate into one plans or tri
 - Fill in skipped tests
   - Test: Ensure that admins can see the edit link on the plan show page. 
   - Test: Ensure some actions are restricted to skippers and admins on plans controller.
+  - Test: Ensure that crew can be edited on a plan
 
 ## 2019-05-28
 
