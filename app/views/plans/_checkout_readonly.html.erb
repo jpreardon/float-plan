@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-2">
+    Skipper
+  </div>
+  <div class="col-3">
+    <%= @plan.skipper.full_name %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Date
+  </div>
+  <div class="col-3">
+    <%= format_date_human(@plan.date) %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Time out
+  </div>
+  <div class="col-3">
+    <%= format_time_human(@plan.time_out) %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Boat
+  </div>
+  <div class="col-3">
+    <%= nil_placeholder(@plan.boat.label) %>
+  </div>
+</div>
+<%if @plan.crew.size > 0 %>
+  <div class="row">
+    <div class="col-2">
+      Crew
+    </div>
+    <div class="col-3">
+      <% @plan.crew.each do |crew| %>
+        <%= crew.full_name %><br>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+<div class="row">
+  <div class="col-2">
+    Weather forecast
+  </div>
+  <div class="col-3">
+    <%= @plan.weather_forecast %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Current direction
+  </div>
+  <div class="col-3">
+    <%= @plan.current %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Direction you will sail
+  </div>
+  <div class="col-3">
+    <%= @plan.direction %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Checkout complete?
+  </div>
+  <div class="col-3">
+    <%= @plan.checkout_complete %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Notes (out)
+  </div>
+  <div class="col-3">
+    <%= @plan.notes_out %>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-2">
+    Time in
+  </div>
+  <div class="col-3">
+    <%= format_time_human(@plan.time_in) %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Checkin complete?
+  </div>
+  <div class="col-3">
+    <%= @plan.checkin_complete %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2">
+    Notes (in)
+  </div>
+  <div class="col-3">
+     <%= @plan.notes_in %>
+  </div>
+</div>

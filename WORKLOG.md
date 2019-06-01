@@ -3,8 +3,6 @@
 ## TODO
 
 - Float Plans
-  
-  - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
   - Fill in skipped tests
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
@@ -15,10 +13,16 @@
 - "Remember me" from more than one browser
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
+- Better guest handling
 
 ## 2019-06-01
 
 - Add a guest textbox to float plans, this is temporary.
+
+Time to figure out how to separate checkouts and checkins. Float plans happen in two parts: Checkout and Checkin. The float plan should be editable to skippers until they complete the checkin (so they can add/remove crew etc.). When creating a new plan, we should only show the form fields needed for checkout. Once that is submitted, the edit form should show the first part of the form as read-only, and the second part as editable, with buttons to complete the check-in. The first part of the should be made editable behind an edit button or something.
+
+- Clean up the show form, refactor into partials for the first and last part of the plan form.
+
 
 ## 2019-05-29
 
