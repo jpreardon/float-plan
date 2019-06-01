@@ -48,6 +48,12 @@
   </div>
   
   <div class="form-group">
+    <%= f.label :guests %>
+    <%= f.text_area :guests, class: 'form-control' %>
+    <small id="guestsHelp" class="form-text text-muted">Please enter the full name of each guest.</small>
+  </div>
+  
+  <div class="form-group">
     <%= f.label :weather_forecast %>
     <%= f.text_area :weather_forecast, class: 'form-control' %>
     <small id="weatherHelp" class="form-text text-muted">Include wind direction, speed, and anything else of note</small>

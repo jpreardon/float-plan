@@ -60,7 +60,8 @@ class PlansController < ApplicationController
                                     :notes_in,
                                     :boat_id,
                                     :skipper_id,
-                                    { crew_ids: [] })
+                                    { crew_ids: [] },
+                                    :guests)
     end
     
     def logged_in_user

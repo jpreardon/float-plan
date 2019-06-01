@@ -3,7 +3,7 @@
 ## TODO
 
 - Float Plans
-  - Add a guest textbox (temporary)
+  
   - Figure out how to separate checkouts and checkins
   - Don't allow skippers to delete their float plans after they are complete
   - Fill in skipped tests
@@ -16,6 +16,9 @@
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 
+## 2019-06-01
+
+- Add a guest textbox to float plans, this is temporary.
 
 ## 2019-05-29
 

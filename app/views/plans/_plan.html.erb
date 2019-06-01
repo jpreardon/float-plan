@@ -4,7 +4,13 @@
   <td><%= nil_placeholder(format_time_human(plan.time_in)) %></td>
   <td><%= nil_placeholder(plan.boat.number) %></td>
   <td><%= link_to "#{plan.skipper.first_name} #{plan.skipper.last_name}", "tel:#{plan.skipper.mobile}" %></td>
-  <td><%= plan.crew.size %></td>
+  <td>
+    <%= plan.crew.size %> 
+    <% if !plan.guests.nil? %>
+      <span class="badge badge-info">guests</span>
+    <% end %>
+  </td>
   <td><%= plan.direction %></td>
   <td><%= plan.notes_out %></td>
 </tr>
+
