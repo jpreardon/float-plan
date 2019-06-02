@@ -1,21 +1,25 @@
 <% provide(:title, 'Float Plan') %>
 <h2>Float Plan</h2>
 
-<%= render 'checkout_readonly' %>
+<div class="row">
+  <div class="col-lg-6">
+    <%= render 'checkout_readonly' %>
 
-<% unless @plan.time_in.nil? %>
-
-  <hr>
-  
-  <%= render 'checkin_readonly' %>
-  
-<% end %>
-
-<% if current_user.admin? || current_user.id == @plan.skipper.id %>
-  <hr>
-  <%= link_to "Edit plan", edit_plan_path, class: "btn btn-outline-primary" %>
-  <%= link_to "Delete plan", @plan,  method: :delete, 
-                                    data: { confirm: 'Are you sure?' },
-                                    class: "btn btn-outline-danger" %>
-<% end %>
+    <% unless @plan.time_in.nil? %>
+    
+      <hr>
+      
+      <%= render 'checkin_readonly' %>
+      
+    <% end %>
+    
+    <% if current_user.admin? || current_user.id == @plan.skipper.id %>
+      <hr>
+      <%= link_to "Edit plan", edit_plan_path, class: "btn btn-outline-primary" %>
+      <%= link_to "Delete plan", @plan,  method: :delete, 
+                                        data: { confirm: 'Are you sure?' },
+                                        class: "btn btn-outline-danger" %>
+    <% end %>
+  </div>
+</div>
 

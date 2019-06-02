@@ -1,41 +1,41 @@
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Skipper
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.skipper.full_name %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Date
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= format_date_human(@plan.date) %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Time out
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= format_time_human(@plan.time_out) %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Boat
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= nil_placeholder(@plan.boat.label) %>
   </div>
 </div>
 <%if @plan.crew.size > 0 %>
   <div class="row">
-    <div class="col-2">
+    <div class="col-4">
       Crew
     </div>
-    <div class="col-3">
+    <div class="col-8">
       <% @plan.crew.each do |crew| %>
         <%= crew.full_name %><br>
       <% end %>
@@ -43,42 +43,42 @@
   </div>
 <% end %>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Weather forecast
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.weather_forecast %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Current direction
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.current %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Direction you will sail
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.direction %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
+  <div class="col-4">
     Checkout complete?
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.checkout_complete %>
   </div>
 </div>
 <div class="row">
-  <div class="col-2">
-    Notes (out)
+  <div class="col-4">
+    Checkout Notes
   </div>
-  <div class="col-3">
+  <div class="col-8">
     <%= @plan.notes_out %>
   </div>
 </div>

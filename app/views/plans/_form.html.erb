@@ -6,9 +6,14 @@
 <%= form_for(@plan) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   
-  <%= render 'checkout', f: f %>
-  
-  <%= render 'checkin', f: f %>
+  <% if !@plan.checkout_complete || params[:checkout_edit] %>
+    <%= render 'checkout', f: f %>
+  <% else %>
+    <%= render 'checkout_readonly' %>
+    <%= link_to "Edit checkout information", edit_plan_path(@plan, checkout_edit: true) %>
+    <hr>
+    <%= render 'checkin', f: f %>
+  <% end %>
   
   <%= f.submit yield(:button_text), class: 'btn btn-primary' %>
   <%= link_to "Cancel", :back,  class: 'btn btn-outline-secondary' %>
@@ -17,4 +22,3 @@
 <script>
   $(".chosen-select").chosen()
 </script>
-

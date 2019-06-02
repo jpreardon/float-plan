@@ -19,6 +19,7 @@
 
 - Add the checkin form fields to the plan edit form.
 - Separate the edit form into partials for checkout and checkin.
+- Add front-end logic to present only the checkout partial for new plans.
 
 ## 2019-06-01
 
