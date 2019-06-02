@@ -3,7 +3,6 @@
 ## TODO
 
 - Float Plans
-  - Don't allow skippers to delete their float plans after they are complete
   - Fill in skipped tests
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
@@ -20,6 +19,7 @@
 - Add the checkin form fields to the plan edit form.
 - Separate the edit form into partials for checkout and checkin.
 - Add front-end logic to present only the checkout partial for new plans.
+- Don't allow skippers to delete their float plans after they are complete
 
 ## 2019-06-01
 

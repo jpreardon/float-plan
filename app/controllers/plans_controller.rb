@@ -40,9 +40,16 @@ class PlansController < ApplicationController
   end
   
   def destroy
-    Plan.find(params[:id]).destroy
-    flash[:success] = 'Plan deleted'
-    redirect_to plans_path
+    @plan = Plan.find(params[:id])
+    # Only admins can destroy complete plans
+    if @plan.checkin_complete && !current_user.admin?
+      flash[:danger] = 'Completed plans can not be deleted'
+      redirect_to plan_path(@plan)
+    else
+      @plan.destroy
+      flash[:success] = 'Plan deleted'
+      redirect_to plans_path
+    end
   end
   
   private

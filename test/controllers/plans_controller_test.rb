@@ -5,6 +5,7 @@ class PlansControllerTest < ActionDispatch::IntegrationTest
   def setup
     @admin = users(:david)
     @other_user = users(:quint)
+    @skipper = users(:sallyskipper)
     @base_title = 'Float Plan'
   end
     
@@ -83,11 +84,19 @@ class PlansControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to root_url
   end
   
-  test 'skipper should not be able to edit/destroy plan after final submission' do
-    skip 'Fill this in once the float plan form is closer being finished'
+  test 'skipper should not be able to destroy plan after final submission' do
+    log_in_as(@skipper)
+    plan = plans(:sallycomplete)
+    assert_no_difference 'Plan.count' do
+      delete plan_path(plan)
+    end
   end
   
-  test 'admin should be able to edit/destroy plan after final submission' do
-    skip 'Fill this in once the float plan form is closer being finished'
+  test 'admin should be able to destroy plan after final submission' do
+    log_in_as(@admin)
+    plan = plans(:sallycomplete)
+    assert_difference 'Plan.count', -1 do
+      delete plan_path(plan)
+    end
   end
 end

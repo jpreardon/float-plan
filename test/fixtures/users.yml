@@ -25,6 +25,15 @@ joeballast:
   skipper: 0
   password_digest: <%= User.digest('password') %>
   
+sallyskipper:
+  first_name: Sally
+  last_name: Skipper
+  email: sally@skipper.com
+  mobile: 1234567890
+  admin: 0
+  skipper: 1
+  password_digest: <%= User.digest('password') %>
+
 <% 30.times do |n| %>
 user_<% n %>:
   first_name: <%= "User #{n}" %>,
