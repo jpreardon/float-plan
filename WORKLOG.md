@@ -15,6 +15,10 @@
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 - Better guest handling
 
+## 2019-06-02
+
+- Add the checkin form fields to the plan edit form.
+
 ## 2019-06-01
 
 - Add a guest textbox to float plans, this is temporary.
