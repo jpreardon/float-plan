@@ -18,6 +18,7 @@
 ## 2019-06-02
 
 - Add the checkin form fields to the plan edit form.
+- Separate the edit form into partials for checkout and checkin.
 
 ## 2019-06-01
 
