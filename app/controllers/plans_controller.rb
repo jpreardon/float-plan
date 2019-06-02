@@ -32,7 +32,11 @@ class PlansController < ApplicationController
   def update
     @plan = Plan.find(params[:id])
     if @plan.update_attributes(plan_params)
-      flash[:success] = 'Plan updated'
+      if @plan.checkin_complete
+        flash[:success] = 'Plan completed'
+      else
+        flash[:success] = 'Plan updated'
+      end
       redirect_to plan_path(@plan)
     else
       render 'edit'

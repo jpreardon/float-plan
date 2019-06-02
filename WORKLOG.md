@@ -2,8 +2,8 @@
 
 ## TODO
 
-- Float Plans
-  - Fill in skipped tests
+- Improve skipper float plan experience
+- Make float plan checklist checkboxes complete checkout
 - Move logged_in_user and admin_user functions to a helper? (they are duplicated now)
 - Email new users login token [account activation tutorial](https://www.railstutorial.org/book/account_activation) might be helpful
 - Better typeahead for mobile (adding crew) (chosen doesn't work at all)
@@ -13,6 +13,7 @@
 - Allow users to edit their own profiles
 - [Friendly forwarding](https://www.railstutorial.org/book/updating_and_deleting_users#sec-friendly_forwarding)
 - Better guest handling
+- Improve float plan index page (don't always show inactive), there are some skipped test for this
 
 ## 2019-06-02
 
@@ -20,6 +21,7 @@
 - Separate the edit form into partials for checkout and checkin.
 - Add front-end logic to present only the checkout partial for new plans.
 - Don't allow skippers to delete their float plans after they are complete
+- Fill in more float plan related tests
 
 ## 2019-06-01
 

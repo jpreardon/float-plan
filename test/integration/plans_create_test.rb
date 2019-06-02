@@ -5,8 +5,10 @@ class PlansCreateTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:david)
     @other_user = users(:quint)
+    @skipper = users(:sallyskipper)
     @crew = users(:joeballast)
     @plan = plans(:davids)
+    @partial_plan = plans(:sallypartial)
   end
   
   test 'should be able to edit crew' do
@@ -28,18 +30,22 @@ class PlansCreateTest < ActionDispatch::IntegrationTest
   end
  
   test 'should be able to submit first part of plan' do
-    skip 'Fill this in once the float plan form is closer being finished'
-  end
-  
-  test 'should be able to edit previously entered information' do
-    skip 'Fill this in once the float plan form is closer being finished'
+    log_in_as(@skipper)
+    post plans_path, params: { plan: { skipper_id: @skipper.id, boat_id: boats(:wasp).id } }
+    follow_redirect!
+    assert_match 'Float plan added', response.body
   end
   
   test 'should get second part of plan after initial submission' do
-    skip 'Fill this in once the float plan form is closer being finished'
+    log_in_as(@skipper)
+    get edit_plan_path(@partial_plan)
+    assert_match 'Checkin Notes', response.body
   end
   
   test 'should be able to complete plan' do
-    skip 'Fill this in once the float plan form is closer being finished'
+    log_in_as(@skipper)
+    patch plan_path(@partial_plan), params: { plan: { time_in: '20:00', checkin_complete: true } }
+    follow_redirect!
+    assert_match 'Plan completed', response.body
   end
 end

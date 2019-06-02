@@ -45,3 +45,16 @@ sallycomplete:
   boat: wasp
   skipper: sallyskipper
   crew: quint
+  
+sallypartial:
+  time_out: '17:30'
+  weather_forecast: 'the free wind is blowin through your hair'
+  checkout_complete: true
+  notes_out: 'No rudder'
+  current: 'ebb'
+  direction: 'north'
+  checkout_complete: true
+  date: '2019-05-01'
+  boat: wasp
+  skipper: sallyskipper
+  crew: quint
