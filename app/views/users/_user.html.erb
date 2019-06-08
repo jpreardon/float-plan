@@ -10,4 +10,5 @@
   <td><%= link_to "#{user.first_name} #{user.last_name}", user %></td>
   <td><%= link_to number_to_phone(user.mobile, area_code: true), "tel:+1#{user.mobile}" %></td>
   <td class="d-none d-md-table-cell"><%= mail_to user.email %></td>
+  <td><span title="<%= format_time_human(user.last_activity_date) %>"><%= nil_placeholder(format_date_human(user.last_activity_date)) %></span></td>
 </tr>

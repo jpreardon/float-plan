@@ -41,4 +41,8 @@ module SessionsHelper
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
+  
+  def log_activity_time
+    User.find_by(id: current_user.id).update(last_activity_date: Time.zone.now)
+  end
 end

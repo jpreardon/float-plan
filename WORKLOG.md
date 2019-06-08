@@ -15,6 +15,10 @@
 - Better guest handling
 - Improve float plan index page (don't always show inactive), there are some skipped test for this
 
+## 2019-06-08
+
+- Add last_activity_date to users
+
 ## 2019-06-02
 
 - Add the checkin form fields to the plan edit form.

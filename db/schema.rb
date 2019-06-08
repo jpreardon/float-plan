@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_01_142102) do
+ActiveRecord::Schema.define(version: 2019_06_08_144420) do
 
   create_table "boats", force: :cascade do |t|
     t.string "number"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 2019_06_01_142102) do
     t.boolean "skipper", default: false
     t.string "mobile"
     t.string "remember_digest"
+    t.datetime "last_activity_date"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
